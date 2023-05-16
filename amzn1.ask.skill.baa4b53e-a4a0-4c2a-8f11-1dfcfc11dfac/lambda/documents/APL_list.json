@@ -1,0 +1,44 @@
+{
+    "type": "Alexa.Presentation.APL.RenderDocument",
+    "token": "documentToken",
+    "document": {
+        "src": "doc://alexa/apl/documents/newList",
+        "type": "Link"
+    },
+    "datasources": {
+        "textListData": {
+            "type": "object",
+            "objectId": "textListSample",
+            "backgroundImage": {
+                "contentDescription": null,
+                "smallSourceUrl": null,
+                "largeSourceUrl": null,
+                "sources": [
+                    {
+                        "url": "",
+                        "size": "large"
+                    }
+                ]
+            },
+            "title": "Selecciona una opción para continuar",
+            "listItems": [
+                {
+                    "primaryText": "Datos sobre el Saldo de Stock."
+                },
+                {
+                    "primaryText": "Datos sobre la Mora."
+                },
+                {
+                    "primaryText": "Datos sobre la Varianza"
+                },
+                {
+                    "primaryText": "Datos sobre Productividad Persona."
+                },
+                {
+                    "primaryText": "Datos sobre Productividad de Micro Empresa."
+                }
+            ],
+            "logoUrl": "https://d2o906d8ln7ui1.cloudfront.net/images/templates_v3/logo/logo-modern-botanical-white.png"
+        }
+    }
+}

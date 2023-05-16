@@ -1,0 +1,122 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "inicia la aplicacion banco nacional de bolivia",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "ListIntentHandler",
+          "slots": [
+            {
+              "name": "optionPhrase",
+              "type": "AMAZON.StreetName"
+            }
+          ],
+          "samples": [
+            "dime la {optionPhrase}"
+          ]
+        },
+        {
+          "name": "StockBalanceIntentHandler",
+          "slots": [
+            {
+              "name": "month",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "el {month} mes",
+                "de {month}",
+                "del mes de {month}"
+              ]
+            },
+            {
+              "name": "optionNumber",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "opcion {optionNumber} del mes de {month}",
+            "dime la opcion {optionNumber} del mes de {month}",
+            "opcion {optionNumber}",
+            "dime la opcion {optionNumber} "
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "StockBalanceIntentHandler",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "month",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.384358125413.1323412630801"
+              }
+            },
+            {
+              "name": "optionNumber",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.384358125413.1323412630801",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "de que mes quieres saber la informacion?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "33"
+}

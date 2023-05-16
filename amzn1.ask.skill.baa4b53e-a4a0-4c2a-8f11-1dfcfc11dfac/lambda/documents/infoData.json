@@ -1,0 +1,19 @@
+{
+    "SaldoStock": [
+        {"balance": "3056660275", "month": 4, "day": 30, "year": 2023, "image": "stock6meses.png"},
+        {"balance": "3056660275", "month": 5, "day": 10, "year": 2023, "image": "stock6meses.png"}
+        ],
+    "moraStock": [
+        {"mora": "3.13%", "month": 5, "day": 10, "year": 2023, "image": "mora6meses.png"}
+        ], 
+    "varianzStock": [
+        {"varianza": "-11197471.0", "month": 5, "day": 10, "year": 2023, "image": "var6meses.png"}
+        ], 
+    "productividadPersona": [
+        {"prodPersona": "22%", "month": 5, "day": 10, "year": 2023, "image": "stock6meses.png"}
+        ], 
+    "productividadMicrocredito": [
+        {"prodMicro": "35%", "month": 5, "day": 10, "year": 2023, "image": "stock6meses.png"}
+        ]
+    
+}
